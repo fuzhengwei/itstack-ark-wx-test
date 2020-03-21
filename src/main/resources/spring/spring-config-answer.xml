@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="answerMap" class="java.util.HashMap">
+        <constructor-arg>
+            <map key-type="java.lang.String" value-type="java.lang.String">
+                <entry key="default" value="您好！/:rose
+#br#br我是bugstack虫洞栈的作者：小傅哥，如果您有什么需求，欢迎留言。
+#br#br获取专题案例源码，请按需回复以下数字编号1、2、3...：
+#br#br0、资源下载，NetAssist网络调试助手等
+#br1、netty案例
+#br2、rpc案例
+#br3、用Java实现jvm源码
+#br4、基于JavaAgent的全链路监控案例
+#br5、iot-gateway案例源码
+#br6、DDD落地
+#br7、SpringCloud专题
+#br8、itstack-ark-wx，微信公众号开发
+#br9、中间件开发，Spring Boot Stater
+#br10、服务框架搭建，SSM、Dubbo、Mq、redis、ES
+#br11、源码分析，Mybatis、Schedule、idea破解
+#br12、Drools规则引擎专题
+#br13、ASM字节码编程"/>
+
+                <entry key="0" value="网络调试助手下载地址：https://download.csdn.net/download/yao__shun__yu/11835105
+#br#br如果没有CSDN下载积分可以加我微信号：monkeycode
+#br#br期待您将公众号：bugstack虫洞栈 | 推荐给你的小伙伴，非常感谢支持！"/>
+
+                <!--  1、netty案例 -->
+                <entry key="1" value="Netty实战专题案例，Netty4.x案例从简单入门到应用实战，全篇37节优秀案例+实战源码[基础篇(12)、拓展篇(13)、应用篇(3章+)、源码篇(6)]，以上章节全部完成并不断持续更新中。
+#br#br源码地址；（Netty4.1案例）
+#brhttps://github.com/fuzhengwei/itstack-demo-netty
+#br#br期待您将公众号：bugstack虫洞栈 | 推荐给你的小伙伴，非常感谢支持！"/>
+
+                <!-- 2、rpc案例 -->
+                <entry key="2" value="RPC是一种远程调用的通信协议，例如dubbo、thrift等，我们在互联网高并发应用开发时候都会使用到类似的服务。本专题主要通过三个章节简单的实现rpc基础功能，来深入学习rpc是如何交互通信的。
+#br#br源码地址：｛手写RPC框架｝
+#brhttps://github.com/fuzhengwei/itstack-demo-rpc
+#br#br期待您将公众号：bugstack虫洞栈 | 推荐给你的小伙伴，非常感谢支持！"/>
+
+                <!-- 3、用Java实现jvm源码 -->
+                <entry key="3" value="本专题主要介绍如何通过java代码来实现JVM的基础功能（搜索解析class文件、字节码命令、运行时数据区等），从而让java程序员通过最熟知的java程序，学习JVM是如何将java程序一步步跑起来的。
+#br#br源码地址：
+#brhttps://github.com/fuzhengwei/itstack-demo-jvm
+#br#br期待您将公众号：bugstack虫洞栈 | 推荐给你的小伙伴，非常感谢支持！"/>
+
+                <!-- 4、基于JavaAgent的全链路监控案例 -->
+                <entry key="4" value="目前市面的全链路监控系统基本都是参考Google的Dapper来做的，本专题主要通过六个章节的代码实战，来介绍如何使用javaagent以及字节码应用，来实现一个简单的java代码链路流程监控。
+
+#br#br源码地址：
+#brhttps://github.com/fuzhengwei/itstack-demo-agent
+#br#br
+期待您将公众号：bugstack虫洞栈 | 推荐给你的小伙伴，非常感谢支持！"/>
+
+                <!-- 5、iot-gateway案例源码 -->
+                <entry key="5" value="基于Netty实现的物联网网关服务，iot-gateway；netty网关，支持百万客户端连接，压力测试ing...，并优化了与服务端集群通信，以往轮询往多个服务器发消息，看似消息发送很平均，其实大大影响了效率，本次对平均算法做了优化,本次上传代码添加了很多功能，摒弃了以往只做心跳维护、数据转发的功能。
+#br#br源码地址：｛作者 - 青草非鱼｝
+#brhttps://github.com/fuzhengwei/itstack-demo-iot-gatewary
+#br#br期待您将公众号：bugstack虫洞栈 | 推荐给你的小伙伴，非常感谢支持！"/>
+
+                <!-- 6、DDD落地 -->
+                <entry key="6" value="本专题以DDD实战落地为根本，分章节设计不同的架构模型，学习并实战是奔入应用级开发最快的方法，Hi HelloWorld！我来了。
+#br#br案例源码：
+#brhttps://github.com/fuzhengwei/itstack-demo-ddd
+#br#br期待您将公众号：bugstack虫洞栈 | 推荐给你的小伙伴，非常感谢支持！"/>
+
+                <!-- 7、SpringCloud专题 -->
+                <entry key="7" value="Spring Cloud是一系列框架的有序集合。它利用Spring Boot的开发便利性巧妙地简化了分布式系统基础设施的开发，如服务发现注册、配置中心、消息总线、负载均衡、断路器、数据监控等，都可以用Spring Boot的开发风格做到一键启动和部署。
+#br#br源码地址：
+#brhttps://github.com/fuzhengwei/itstack-demo-springcloud
+#br#br期待您将公众号：bugstack虫洞栈 | 推荐给你的小伙伴，非常感谢支持！"/>
+
+                <!-- 8、微信公众号与博客打通 -->
+                <entry key="8" value="itstack-ark-wx 是一套基于领域驱动设计方式搭建的Java公众号开发工程，主要服务于博客与公众号之间打通，引导用户关注公众号，做粉丝回流。其实产品往往是使用研发技术力搭建出可以用于承载接收用户在各种设备上所生产的行为数据的一种产品化服务。因此兴衰存亡，皆在核心数据沉淀于运作上！
+#br#br源码地址：
+#brhttps://github.com/fuzhengwei/itstack-ark-wx-test
+#br#br期待您将公众号：bugstack虫洞栈 | 推荐给你的小伙伴，非常感谢支持！"/>
+
+                <!-- 9、中间件开发 -->
+                <entry key="9" value="Spring Boot 中间件开发，基于服务治理为目的将非业务行为的核心逻辑剥离出来开发为独立的中间件，赋能于业务系统快速开发。
+#br#br源码地址：
+#br#br服务治理中间件之统一白名单验证
+#br中间件  ：https://github.com/fuzhengwei/door-spring-boot-starter
+#br测试工程：https://github.com/fuzhengwei/itstack-demo-springboot-helloworld
+#br#br期待您将公众号：bugstack虫洞栈 | 推荐给你的小伙伴，非常感谢支持！"/>
+
+                <entry key="10" value="服务框架搭建，依赖于不同的业务诉求搭建出各种服务功能的框架结构。将逐步完成；单体服务应用(适合于ERP和个人)、分库分表应用、Mq服务、任务服务、分布式服务、RPC服务等。
+
+#br#br源码地址：
+#brhttps://github.com/fuzhengwei/itstack-demo-frame
+#br#br
+期待您将公众号：bugstack虫洞栈 | 推荐给你的小伙伴，非常感谢支持！"/>
+
+                <entry key="11" value="服源码分析以最核心干货内容为入手，将平时开发使用到的Spring、Mybatis、多线程等逐个渗透分析研究。不在只是单纯使用，而是要从原理分析获取更多的技术成长。
+
+#br#br源码地址：
+#brhttps://github.com/fuzhengwei/itstack-demo-code
+#br#br
+期待您将公众号：bugstack虫洞栈 | 推荐给你的小伙伴，非常感谢支持！"/>
+
+                <entry key="12" value="Drools 是 Java 语言基于Rete算法编写的规则引擎，可以方便的使用声明表达业务逻辑，非常简单易用。本专题会从入门开始逐步完成对Drools的讲解。
+
+#br#br源码地址：
+#brhttps://github.com/fuzhengwei/itstack-demo-drools
+#br#br
+期待您将公众号：bugstack虫洞栈 | 推荐给你的小伙伴，非常感谢支持！"/>
+
+                <entry key="13" value="DASM是一个java字节码操纵框架，它能被用来动态生成类或者增强既有类的功能。ASM 可以直接产生二进制 class 文件，也可以在类被加载入 Java 虚拟机之前动态改变类行为。
+
+#br#br源码地址：
+#brhttps://github.com/fuzhengwei/itstack-demo-asm
+#br#br
+期待您将公众号：bugstack虫洞栈 | 推荐给你的小伙伴，非常感谢支持！"/>
+            </map>
+
+        </constructor-arg>
+    </bean>
+
+</beans>

@@ -1,0 +1,23 @@
+server:
+  port: 80
+
+spring:
+   datasource:
+     username: root
+     password: 123456
+     url: jdbc:mysql://localhost:3306/itstack?useUnicode=true&characterEncoding=utf8
+     driver-class-name: com.mysql.jdbc.Driver
+
+mybatis:
+  mapper-locations: classpath:/mybatis/mapper/*.xml
+  config-location:  classpath:/mybatis/config/mybatis-config.xml
+
+# 微信公众号配置信息
+# originalid：原始ID
+# appid：个人AppID
+# token：开通接口服务自定义设置
+wx:
+   config:
+     originalid: gh_xxxx
+     appid: wx47053xxxxx
+     token: bugstack

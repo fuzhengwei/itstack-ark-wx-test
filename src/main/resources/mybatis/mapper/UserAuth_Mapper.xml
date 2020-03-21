@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.itstack.ark.wx.infrastructure.dao.UserAuthDao">
+
+    <insert id="insert" parameterType="org.itstack.ark.wx.infrastructure.po.UserAuth">
+        INSERT INTO user_auth
+        (openId, token, uuid, createTime, updateTime)
+        VALUES
+        (#{openId}, #{token}, #{uuid}, now(), now())
+    </insert>
+
+    <delete id="delete" parameterType="java.lang.String">
+        delete from user_auth where openId = #{openId}
+    </delete>
+
+    <select id="queryUserAuth" resultType="org.itstack.ark.wx.infrastructure.po.UserAuth">
+        SELECT openId, token FROM user_auth
+        where token = #{token}
+    </select>
+
+</mapper>
